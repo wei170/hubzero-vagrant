@@ -1,0 +1,11 @@
+2016-04-09 20:07:31 hubzero FAILURE: Username and password do not match or you do not have an account yet.
+2016-04-09 20:07:31 admin 192.168.33.1 invalid
+2016-04-09 20:07:36 hubzero FAILURE: Username and password do not match or you do not have an account yet.
+2016-04-09 20:07:36 admin 192.168.33.1 invalid
+2016-04-09 20:09:01 1000 [admin] 192.168.33.1 login
+2016-04-09 20:10:55 admin 192.168.33.1 logout
+2016-04-09 20:10:55 admin 192.168.33.1 detect
+2016-04-09 20:11:00 1000 [admin] 192.168.33.1 login
+2016-04-09 20:12:08 admin 192.168.33.1 detect
+2016-04-09 20:12:17 1000 [admin] 192.168.33.1 login
+2016-04-09 20:23:53 1003 [kwojo314] 192.168.33.1 login
