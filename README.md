@@ -15,14 +15,10 @@ Please checkout [the official HUBzero Website](https://hubzero.org) for more sec
 If you have issues, please create an issue!
 
 ## Setup
-1. mysql -u root; create database example;
-1. mysql -u root example > /var/www/databasedump.sql
-2. cp /var/www/default-ssl.conf /etc/apache2/sites-enabled/.
-3. cd /var/www/public (the webroot is /var/www/public for Scotch Box)
+You'll want to do this on the HOST, not within the `vagrant ssh` environment.
+
 4. git clone https://github.org/hubzero/hubzero-cms ./
 5. git checkout 2.0.0 (latest stable branch)
-6. sudo a2enmod ssl
-7. sudo service apache2 restart
 8. You _might_ have to make the /var/www/public/app/log directory.
 9. cp -r /var/www/app-scotch /var/www/public/app
 9. Login into https://192.168.33.10/administrator using the credentials below
