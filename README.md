@@ -1,3 +1,41 @@
+HUBzero Vagrant
+===============
+This is a Scotch Box vagrant setup for the HUBzero Content Management System. The main motivation is to create a portable and disposable environment for web development.
+
+** This is NOT a production-ready system!! ** 
+The passwords are weak, information may be included in the database, file permissions are not properly set, etc. etc. etc. Why? Because let the sysadmins worry about it while you write your code.
+Please checkout [the official HUBzero Website](https://hubzero.org) for more secure options. 
+
+## TODO list
+1. Script the setup
+2. Generate a good test dataset
+3. Polish and refine.
+4. ??? 
+
+If you have issues, please create an issue!
+
+## Setup
+1. mysql -u root; create database example;
+1. mysql -u root example > /var/www/databasedump.sql
+2. cp /var/www/default-ssl.conf /etc/apache2/sites-enabled/.
+3. cd /var/www/public (the webroot is /var/www/public for Scotch Box)
+4. git clone https://github.org/hubzero/hubzero-cms ./
+5. git checkout 2.0.0 (latest stable branch)
+6. sudo a2enmod ssl
+7. sudo service apache2 restart
+8. You _might_ have to make the /var/www/public/app/log directory.
+9. cp -r /var/www/app-scotch /var/www/public/app
+9. Login into https://192.168.33.10/administrator using the credentials below
+HUBzero CMS Administrator login: admin / vagrant2016
+
+Please let me know if somethings appears to be missing and you're just stuck.
+
+
+
+
+## Original Scotch Box information for your information.
+
+
 Scotch Box
 ==========
 
