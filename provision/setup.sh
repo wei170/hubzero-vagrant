@@ -11,7 +11,7 @@ service apache2 restart
 echo "*******************************************************"
 echo " On the HOST:"
 echo " Go to the public directory: "
-echo " Run: git clone http://github.com/hubzero/hubzero-cms"
+echo " Run: git clone http://github.com/hubzero/hubzero-cms ./"
 echo " Then run: git checkout 2.0.0"
 echo " Then cp -r /var/www/app-scotch /var/www/public/app"
 echo "*******************************************************"
