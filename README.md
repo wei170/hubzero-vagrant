@@ -17,10 +17,10 @@ If you have issues, please create an issue! :D
 ## Setup
 You'll want to do this using the`vagrant ssh` environment.
 
-4. `git clone https://github.org/hubzero/hubzero-cms ./` (this is a big repo, please be patient!)
+4. `git clone http://github.org/hubzero/hubzero-cms ./` (this is a big repo, please be patient!)
 5. `git config core.fileMode false` (ignores file mode changes, which git gets all uptight about)
 5. `git checkout 2.0.0 -f` (latest stable branch)
-8.  Remove the existing app directory: `rm /var/www/public/app` 
+8.  Remove the existing app directory: `rm -rf /var/www/public/app` 
 9. `cp -r /var/www/app-scotch /var/www/public/app`
 10. You _might_ have to make the `/var/www/public/app/log` directory.
 9. Login into https://192.168.33.10/administrator using the credentials below
