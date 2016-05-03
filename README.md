@@ -4,7 +4,7 @@ This is a Scotch Box vagrant setup for the HUBzero Content Management System. Th
 
 ** This is NOT a production-ready system!! ** 
 The passwords are weak, information may be included in the database, file permissions are not properly set, etc. etc. etc. Why? Because let the sysadmins worry about it while you write your code.
-Please checkout [the official HUBzero Website](https://hubzero.org) for more secure options. 
+Please checkout [the official HUBzero Website](https://hubzero.org/download) for more secure options. 
 
 ## TODO list
 1. Script the setup
@@ -12,15 +12,16 @@ Please checkout [the official HUBzero Website](https://hubzero.org) for more sec
 3. Polish and refine.
 4. ??? 
 
-If you have issues, please create an issue!
+If you have issues, please create an issue! :D
 
 ## Setup
-You'll want to do this on the HOST, not within the `vagrant ssh` environment.
+You'll want to do this using the`vagrant ssh` environment.
 
-4. git clone https://github.org/hubzero/hubzero-cms ./
-5. git checkout 2.0.0 (latest stable branch)
-8. You _might_ have to make the /var/www/public/app/log directory.
-9. cp -r /var/www/app-scotch /var/www/public/app
+4. `git clone https://github.org/hubzero/hubzero-cms ./` (this is a big repo, please be patient!)
+5. `git config core.fileMode false` (ignores file mode changes, which git gets all uptight about)
+5. `git checkout 2.0.0 -f` (latest stable branch)
+8. You _might_ have to make the `/var/www/public/app/log` directory.
+9. `cp -r /var/www/app-scotch /var/www/public/app`
 9. Login into https://192.168.33.10/administrator using the credentials below
 HUBzero CMS Administrator login: admin / vagrant2016
 
