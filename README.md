@@ -19,6 +19,7 @@ You'll want to do this using the`vagrant ssh` environment.
 
 4. `git clone http://github.org/hubzero/hubzero-cms ./` (this is a big repo, please be patient!)
 5. `git config core.fileMode false` (ignores file mode changes, which git gets all uptight about)
+<<<<<<< HEAD
 5. `git checkout 2.1.0 -f` (latest stable branch)
 8.  Remove the existing app directory: `rm -rf /var/www/public/app` 
 9. `cp -r /var/www/app-scotch /var/www/public/app`
