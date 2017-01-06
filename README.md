@@ -20,4 +20,5 @@ The original scotch-box documentation can be found here: [https://github.com/sco
  1. Rename the `public/app-scotch` directory to `public/app/`.
  1. Run `vagrant ssh` to enter the Vagrant Box.
  1. Navigate to the `/var/www/public/core` directory and run the command `php bin/composer install` to pull in external dependancies.
- 1. 
+ 1. Navigate to the `/var/www/public` directory and run `php muse migration -i -f` to run the latest database migrations.
+ 
