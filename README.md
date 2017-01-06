@@ -10,15 +10,14 @@ If you have issues, [please create an issue on GitHub](https://github.com/kevinw
 
 The original scotch-box documentation can be found here: [https://github.com/scotch-io/scotch-box/blob/master/README.md](https://github.com/scotch-io/scotch-box/blob/master/README.md). There are some useful things like MailCatcher which can help development.
 
-## Setup
- 1. Clone this repository: `git clone https://github.com/kevinwojo/hubzero-vagrant.git`
- 1. Start the Vagrant Box by running the `vagrant up` command using a Terminal program from within the hubzero-vagrant directory that was created in Step 1.
- 1. Remove any files in the public directory
- 1. Clone the HUBzero repository into the public directory by running `git clone https://github.com/hubzero/hubzero-cms.git --depth 1 -b 2.1.0 public/.`
- 1. Remove the `public/app` directory.
- 1. Copy the `app-scotch` directory into `public` directory.
- 1. Rename the `public/app-scotch` directory to `public/app/`.
- 1. Run `vagrant ssh` to enter the Vagrant Box.
- 1. Navigate to the `/var/www/public/core` directory and run the command `php bin/composer install` to pull in external dependancies.
- 1. Navigate to the `/var/www/public` directory and run `php muse migration -i -f` to run the latest database migrations.
- 
+## Installation and Setup
+Using a Terminal application:
+ - Run `git clone https://github.com/kevinwojo/hubzero-vagrant`
+ - Within the newly created hubzero-vagrant directory, run `vagrant up`.
+
+## Notes
+When `vagrant up` script is ran, it uses git, composer, and muse. The former two require an internet connection.
+
+A development hub should be up and running on [https://192.168.33.10](https://192.168.33.10).
+You can log into the hub using the `admin` account with the password `vagrant2016`. 
+
