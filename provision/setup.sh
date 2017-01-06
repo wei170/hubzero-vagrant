@@ -6,13 +6,11 @@ rm -rf /var/www/public && mkdir /var/www/public
 cp /var/www/default-ssl.conf /etc/apache2/sites-enabled/.
 a2enmod ssl
 service apache2 restart
-
-
-echo "*******************************************************"
-echo " On the HOST:"
-echo " Go to the public directory: "
-echo " Run: git clone http://github.com/hubzero/hubzero-cms ./"
-echo " Then run: git checkout 2.0.0"
-echo " Then cp -r /var/www/app-scotch /var/www/public/app"
-echo "*******************************************************"
-
+cd /var/www/public
+git clone https://github.com/hubzero/hubzero-cms.git --depth 1 -b 2.1.0 .
+rm -rf app
+cp -r /var/www/app-scotch app
+cd /var/www/public/core
+php bin/composer install
+cd /var/www/public
+php muse migration -i -f
